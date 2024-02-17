@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">week3</string>
+    <string name="food_image">food_image</string>
+    <string name="food_order">Food Order</string>
+    <string name="food">Food</string>
+    <string name="drink">Drink</string>
+    <string name="vegtable">Vegtable</string>
+    <string name="food_menu">Food Menu</string>
+</resources>
