@@ -13,11 +13,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView tvForgetPassword = findViewById(R.id.tvFpw);
         Button btnRegister = findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Signup.class);
             startActivity(intent);
         });
 
+        tvForgetPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ForgetPassword.class);
+            startActivity(intent);
+        });
     }
 }
