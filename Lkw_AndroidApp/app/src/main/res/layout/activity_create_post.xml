@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePost">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Limkokwing University"
+        app:titleTextColor="@color/white"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle"
+            android:padding="30dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:text="Upload Image"
+                android:textAlignment="center"
+                android:textStyle="bold">
+            </TextView>
+            <ImageView
+                android:id="@+id/updateImg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/add_img_ic">
+            </ImageView>
+            <EditText
+                android:id="@+id/etPostTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/enter_title"
+                android:textColorHint="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"
+                android:inputType="text"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:autofillHints=""
+                tools:ignore="TextFields">
+            </EditText>
+            <EditText
+                android:id="@+id/etPostBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="@string/enter_description"
+                android:textColorHint="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:inputType="text"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="12dp"
+                android:autofillHints=""
+                tools:ignore="TextFields"
+                >
+            </EditText>
+            <Button
+                android:id="@+id/btnPostSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_btn2"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textColorLink="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

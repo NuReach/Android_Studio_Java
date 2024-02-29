@@ -4,14 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
+public class MainActivity extends AppCompatActivity {
+    FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +23,13 @@ public class MainActivity extends AppCompatActivity {
         Button btnLogin = findViewById(R.id.btnLogin);
         Button btnRegister = findViewById(R.id.btnRegister);
         TextView tvForgetPassword = findViewById(R.id.tvFpw);
+        firebaseAuth = FirebaseAuth.getInstance();
 
+        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+        if (firebaseUser != null){
+            finish();
+            startActivity(new Intent(this, Home.class));
+        }
 
         btnLogin.setOnClickListener(v -> {
             String email = etEmail.getText().toString().trim();
@@ -31,7 +39,13 @@ public class MainActivity extends AppCompatActivity {
             }else if ( password.length() <7 ){
                 Toast.makeText(getApplicationContext(),"Password should be greater than 7 digits",Toast.LENGTH_LONG).show();
             }else {
-                Log.d("login",email);
+                firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(task -> {
+                    if (task.isSuccessful()){
+                        checkEmailVerification();
+                    }else {
+                        Toast.makeText(getApplicationContext(),"Account does not exist",Toast.LENGTH_LONG).show();
+                    }
+                });
             }
         });
 
@@ -45,4 +59,19 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+
+    private void checkEmailVerification(){
+        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+        assert firebaseUser != null;
+        if (firebaseUser.isEmailVerified()){
+            Toast.makeText(getApplicationContext(),"Logged In",Toast.LENGTH_LONG).show();
+            finish();
+            startActivity(new Intent(this, Home.class));
+        }else{
+            Toast.makeText(getApplicationContext(),"Please verify your email",Toast.LENGTH_LONG).show();
+            firebaseAuth.signOut();
+        }
+    }
+
 }
