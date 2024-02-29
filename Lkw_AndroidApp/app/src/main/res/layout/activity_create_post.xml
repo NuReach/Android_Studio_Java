@@ -33,6 +33,7 @@
             android:padding="30dp"
             >
             <TextView
+                android:id="@+id/btnUploadImg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -42,7 +43,7 @@
                 android:textStyle="bold">
             </TextView>
             <ImageView
-                android:id="@+id/updateImg"
+                android:id="@+id/imgView"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/add_img_ic">
@@ -58,7 +59,7 @@
                 android:layout_marginTop="30dp"
                 android:padding="15dp"
                 android:inputType="text"
-                android:background="@drawable/custom_input"
+                android:background="@drawable/custom_input2"
                 android:drawablePadding="12dp"
                 android:autofillHints=""
                 tools:ignore="TextFields">
@@ -74,7 +75,7 @@
                 android:layout_marginTop="15dp"
                 android:padding="15dp"
                 android:inputType="text"
-                android:background="@drawable/custom_input"
+                android:background="@drawable/custom_input2"
                 android:drawablePadding="12dp"
                 android:autofillHints=""
                 tools:ignore="TextFields"
