@@ -21,13 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-        <TextView
-            android:id="@+id/tvChat"
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Chat">
-        </TextView>
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 </RelativeLayout>

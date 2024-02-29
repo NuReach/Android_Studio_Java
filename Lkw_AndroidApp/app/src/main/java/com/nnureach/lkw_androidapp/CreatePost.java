@@ -118,7 +118,7 @@ public class CreatePost extends AppCompatActivity {
             progressDialog.show();
             String title = titleEditText.getText().toString().trim();
             String body = bodyEditText.getText().toString().trim();
-            String imageUrl = "";
+            String imageUrl = "https://wiki.lordofthecraft.net/images/1/1e/noimg.png";
             String userId = auth.getCurrentUser().getUid();
             UUID uuid = UUID.randomUUID();
             // Convert UUID to a String

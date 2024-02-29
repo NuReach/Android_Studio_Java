@@ -1,6 +1,8 @@
 package com.nnureach.lkw_androidapp;
 
-public class Upload {
+import java.io.Serializable;
+
+public class Upload implements Serializable {
     private String title;
     private String body;
     private String imageUrl;
