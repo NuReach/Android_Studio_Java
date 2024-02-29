@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:background="@drawable/wave__2_" >
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:textColor="#FFFFFF"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_to_continue"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck">
+        </TextView>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="@string/enter_email"
+            android:drawableStart="@drawable/email_w"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:autofillHints="">
+        </EditText>
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:hint="@string/enter_password"
+            android:drawableStart="@drawable/pw_w"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:autofillHints="">
+        </EditText>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_btn"
+            android:text="@string/log_in"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textColorLink="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvFpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:text="@string/forget_password"
+            android:textAlignment="center"
+            android:textSize="12sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:textColor="@color/black"
+            android:text="@string/don_t_have_an_account_yet"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_btn2"
+            android:text="@string/go_to_resigster"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textColorLink="#FFFFFF" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
