@@ -8,4 +8,10 @@
     <string name="don_t_have_an_account_yet">Don\'t have an account yet ?</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
+    <string name="go_to_login">Go to login</string>
+    <string name="you_already_have_an_account">You already have an account ?</string>
+    <string name="make_sure_to_remember_your_information">Make sure to remember your information</string>
+    <string name="sign_up">Sign up</string>
+    <string name="welcome_new_user">Welcome New User</string>
+    <string name="hello">Hello !</string>
 </resources>
