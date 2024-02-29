@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199755723498",
+    "project_id": "lkw-android-app-ba6c5",
+    "storage_bucket": "lkw-android-app-ba6c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199755723498:android:df3bcf6384d9ff52a81d93",
+        "android_client_info": {
+          "package_name": "com.nnureach.lkw_androidapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAimZtIZex4BHPhUvTliWp-CBGqAI2ys-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

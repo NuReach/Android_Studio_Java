@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:hint="@string/enter_password"
             android:drawableStart="@drawable/pw_w"
             android:textColorHint="@color/white"
@@ -70,7 +70,8 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/custom_input"
             android:drawablePadding="12dp"
-            android:autofillHints="">
+            android:autofillHints=""
+            tools:ignore="TextFields">
         </EditText>
 
         <Button
