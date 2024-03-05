@@ -24,4 +24,7 @@
     <string name="scan">Scan</string>
     <string name="chat">Chat</string>
     <string name="profile">Profile</string>
+    <string name="tap_to_scan">TAP TO SCAN</string>
+    <string name="the_app_will_require_access_to_the_camera">The app will require access to the camera</string>
+    <string name="qrcode">qrcode</string>
 </resources>
