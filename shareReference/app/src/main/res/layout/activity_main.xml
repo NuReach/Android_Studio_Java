@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/highScoreView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HighScore" />
+
+    <TextView
+        android:id="@+id/randomView"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:text="RandomScore"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#145FE1"
+        android:onClick="Play"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E84444"
+        android:onClick="Reset"
+        android:text="Reset" />
+</LinearLayout>
